@@ -12,6 +12,7 @@
 		949F01322173F850009E69BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949F01302173F850009E69BB /* Main.storyboard */; };
 		949F01342173F852009E69BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949F01332173F852009E69BB /* Assets.xcassets */; };
 		949F01372173F852009E69BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949F01352173F852009E69BB /* LaunchScreen.storyboard */; };
+		949F013F2173F911009E69BB /* 05 Bambi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 949F013E2173F8FF009E69BB /* 05 Bambi.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		949F01332173F852009E69BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		949F01362173F852009E69BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		949F01382173F852009E69BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949F013E2173F8FF009E69BB /* 05 Bambi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "05 Bambi.m4a"; path = "../../../../../Music/iTunes/iTunes Media/Music/Tokyo Police Club/Champ/05 Bambi.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				949F012C2173F850009E69BB /* AppDelegate.swift */,
 				949F012E2173F850009E69BB /* ViewController.swift */,
 				949F01302173F850009E69BB /* Main.storyboard */,
+				949F013E2173F8FF009E69BB /* 05 Bambi.m4a */,
 				949F01332173F852009E69BB /* Assets.xcassets */,
 				949F01352173F852009E69BB /* LaunchScreen.storyboard */,
 				949F01382173F852009E69BB /* Info.plist */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949F013F2173F911009E69BB /* 05 Bambi.m4a in Resources */,
 				949F01372173F852009E69BB /* LaunchScreen.storyboard in Resources */,
 				949F01342173F852009E69BB /* Assets.xcassets in Resources */,
 				949F01322173F850009E69BB /* Main.storyboard in Resources */,

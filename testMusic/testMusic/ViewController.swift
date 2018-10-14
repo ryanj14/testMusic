@@ -22,11 +22,29 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var volume: UISlider!
     
+    
+    @IBOutlet weak var currentTime: UILabel!
+    
+    
+    @IBOutlet weak var progressBar: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         prepareSongAndSession()
+        
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
+        
+        // Setting this up to zero because no song is playing
+        progressBar.setProgress(Float(songPlayer.currentTime / songPlayer.duration), animated: false)
+    }
+    
+    // Updates the progress bar
+    @objc private func updateProgress() {
+        if songPlayer.isPlaying {
+            progressBar.setProgress(Float(songPlayer.currentTime / songPlayer.duration), animated: true)
+        }
     }
     
     // Prepares our song
@@ -70,6 +88,12 @@ class ViewController: UIViewController {
     // Volume of the song
     @IBAction func volumeSlider(_ sender: Any) {
         songPlayer.volume = volume.value
+    }
+    
+    private func currentSongTime() {
+        while(songPlayer.isPlaying) {
+            currentTime.text = "\(songPlayer.currentTime)"
+        }
     }
 }
 

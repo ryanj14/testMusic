@@ -95,5 +95,12 @@ class ViewController: UIViewController {
             currentTime.text = "\(songPlayer.currentTime)"
         }
     }
+    
+    // Stops the song and set the timer to zero
+    @IBAction func totalStop(_ sender: Any) {
+        songPlayer.stop()
+        songPlayer.currentTime = 0
+        progressBar.setProgress(Float(songPlayer.currentTime / songPlayer.duration), animated: false)
+    }
 }
 

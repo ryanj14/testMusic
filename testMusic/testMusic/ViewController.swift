@@ -19,12 +19,9 @@ class ViewController: UIViewController {
     // We create a AVAudioPlayer object that plays music from a file
     private var songPlayer = AVAudioPlayer()
     
-    
     @IBOutlet weak var volume: UISlider!
     
-    
     @IBOutlet weak var currentTime: UILabel!
-    
     
     @IBOutlet weak var progressBar: UIProgressView!
     
@@ -34,6 +31,7 @@ class ViewController: UIViewController {
         
         prepareSongAndSession()
         
+        // object c style code
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
         
         // Setting this up to zero because no song is playing
@@ -41,6 +39,8 @@ class ViewController: UIViewController {
     }
     
     // Updates the progress bar
+    // need to use the @objc to let swift know we're using object c style code
+    // in the selector
     @objc private func updateProgress() {
         if songPlayer.isPlaying {
             progressBar.setProgress(Float(songPlayer.currentTime / songPlayer.duration), animated: true)
